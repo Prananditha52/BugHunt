@@ -1,4 +1,7 @@
 language: java
-script : mvn clean jacoco:prepare-agent install jacoco:report
+sudo: false
+
+script: "mvn cobertura:cobertura"
+
 after_success:
   - bash <(curl -s https://codecov.io/bash)
