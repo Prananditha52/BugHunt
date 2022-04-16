@@ -1,102 +1,91 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="34" failures="0" name="artbughunt.AVLTree_ESTest" time="0.08" errors="0" skipped="0">
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="artbughunt.AVLTree_ESTest" time="1.311" tests="25" errors="1" skipped="0" failures="0">
   <properties>
-    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
-    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_311\jre\bin"/>
-    <property name="java.vm.version" value="25.311-b11"/>
-    <property name="java.vm.vendor" value="Oracle Corporation"/>
-    <property name="maven.multiModuleProjectDirectory" value="C:\Users\mpran\OneDrive\Desktop\UH_Sem2\PAT\Hwbughunt"/>
-    <property name="java.vendor.url" value="http://java.oracle.com/"/>
-    <property name="path.separator" value=";"/>
-    <property name="guice.disable.misplaced.annotation.check" value="true"/>
-    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
     <property name="file.encoding.pkg" value="sun.io"/>
-    <property name="user.script" value=""/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\mpran\OneDrive\Desktop\UH_Sem2\PAT\Hwbughunt\target\test-classes;C:\Users\mpran\OneDrive\Desktop\UH_Sem2\PAT\Hwbughunt\target\classes;C:\Users\mpran\.m2\repository\junit\junit\4.12\junit-4.12.jar;C:\Users\mpran\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\mpran\.m2\repository\org\evosuite\evosuite-standalone-runtime\1.0.6\evosuite-standalone-runtime-1.0.6.jar;C:\Users\mpran\.m2\repository\org\jacoco\org.jacoco.agent\0.8.7\org.jacoco.agent-0.8.7.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="user.timezone" value="America/Chicago"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="os.name" value="Windows 10"/>
     <property name="user.country" value="US"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
-    <property name="sun.os.patch.level" value=""/>
-    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="C:\Users\mpran\OneDrive\Desktop\UH_Sem2\PAT\Hwbughunt"/>
-    <property name="java.runtime.version" value="1.8.0_311-b11"/>
-    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_311\jre\lib\endorsed"/>
-    <property name="os.arch" value="amd64"/>
-    <property name="java.io.tmpdir" value="C:\Users\mpran\AppData\Local\Temp\"/>
-    <property name="line.separator" value="
-"/>
-    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
-    <property name="user.variant" value=""/>
-    <property name="os.name" value="Windows 10"/>
-    <property name="classworlds.conf" value="C:\apache-maven-3.8.5\bin\m2.conf"/>
-    <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_311\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Java\jdk1.8.0_311\bin;C:\Program Files (x86)\VMware\VMware Player\bin\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\PuTTY\;C:\Program Files\Git\cmd;C:\Program Files\Amazon\AWSCLIV2\;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;&quot;c:\windows\System32;&quot;;C:\Program Files (x86)\Graphviz\bin;C:\Program Files\LLVM\bin;C:\MinGW\bin;C:\Users\mpran\OneDrive\Desktop\ghidra_10.1.2_PUBLIC_20220125\ghidra_10.1.2_PUBLIC;C:\apache-maven-3.8.5\bin;C:\Users\mpran\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\mpran\AppData\Local\Programs\Python\Python310\;C:\Users\mpran\AppData\Local\Microsoft\WindowsApps;;C:\Users\mpran\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\JetBrains\PyCharm 2021.3\bin;;C:\Users\mpran\AppData\Roaming\TinyTeX\bin\win32;."/>
-    <property name="maven.conf" value="C:\apache-maven-3.8.5/conf"/>
-    <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="java.class.version" value="52.0"/>
-    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
-    <property name="os.version" value="10.0"/>
-    <property name="library.jansi.path" value="C:\apache-maven-3.8.5\lib\jansi-native"/>
-    <property name="user.home" value="C:\Users\mpran"/>
-    <property name="user.timezone" value="America/Chicago"/>
-    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
-    <property name="java.specification.version" value="1.8"/>
-    <property name="file.encoding" value="Cp1252"/>
-    <property name="user.name" value="mpran"/>
-    <property name="java.class.path" value="C:\apache-maven-3.8.5\boot\plexus-classworlds-2.6.0.jar"/>
-    <property name="java.vm.specification.version" value="1.8"/>
-    <property name="sun.arch.data.model" value="64"/>
-    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_311\jre"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test"/>
-    <property name="java.specification.vendor" value="Oracle Corporation"/>
-    <property name="user.language" value="en"/>
-    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
-    <property name="java.vm.info" value="mixed mode"/>
-    <property name="java.version" value="1.8.0_311"/>
-    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_311\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
-    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_311\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_311\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_311\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_311\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_311\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_311\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_311\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_311\jre\classes"/>
-    <property name="sun.stderr.encoding" value="cp437"/>
-    <property name="java.vendor" value="Oracle Corporation"/>
-    <property name="maven.home" value="C:\apache-maven-3.8.5"/>
-    <property name="file.separator" value="\"/>
-    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_311\jre\bin"/>
+    <property name="sun.java.command" value="C:\Users\mpran\AppData\Local\Temp\surefire8237631288232172155\surefirebooter6514569541061866815.jar C:\Users\mpran\AppData\Local\Temp\surefire8237631288232172155 2022-04-16T14-26-01_441-jvmRun1 surefire2643277097595918573tmp surefire_08057669881763675875tmp"/>
+    <property name="surefire.test.class.path" value="C:\Users\mpran\OneDrive\Desktop\UH_Sem2\PAT\Hwbughunt\target\test-classes;C:\Users\mpran\OneDrive\Desktop\UH_Sem2\PAT\Hwbughunt\target\classes;C:\Users\mpran\.m2\repository\junit\junit\4.12\junit-4.12.jar;C:\Users\mpran\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\mpran\.m2\repository\org\evosuite\evosuite-standalone-runtime\1.0.6\evosuite-standalone-runtime-1.0.6.jar;C:\Users\mpran\.m2\repository\org\jacoco\org.jacoco.agent\0.8.7\org.jacoco.agent-0.8.7.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\mpran"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_311\jre"/>
+    <property name="basedir" value="C:\Users\mpran\OneDrive\Desktop\UH_Sem2\PAT\Hwbughunt"/>
+    <property name="file.separator" value="\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="C:\Users\mpran\AppData\Local\Temp\surefire8237631288232172155\surefirebooter6514569541061866815.jar;C:\\Users\\mpran\\.m2\\repository\\org\\jacoco\\org.jacoco.agent\\0.8.6\\org.jacoco.agent-0.8.6-runtime.jar"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_311\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_311\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_311\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_311\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_311\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_311\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_311\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_311\jre\classes"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="1.8.0_311-b11"/>
+    <property name="user.name" value="mpran"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_311\jre\lib\endorsed"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\mpran\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\mpran\AppData\Local\Temp\"/>
+    <property name="java.version" value="1.8.0_311"/>
+    <property name="user.dir" value="C:\Users\mpran\OneDrive\Desktop\UH_Sem2\PAT\Hwbughunt"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_311\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Java\jdk1.8.0_311\bin;C:\Program Files (x86)\VMware\VMware Player\bin\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\PuTTY\;C:\Program Files\Git\cmd;C:\Program Files\Amazon\AWSCLIV2\;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;&quot;c:\windows\System32;&quot;;C:\Program Files (x86)\Graphviz\bin;C:\Program Files\LLVM\bin;C:\MinGW\bin;C:\Users\mpran\OneDrive\Desktop\ghidra_10.1.2_PUBLIC_20220125\ghidra_10.1.2_PUBLIC;C:\apache-maven-3.8.5\bin;C:\Users\mpran\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\mpran\AppData\Local\Programs\Python\Python310\;C:\Users\mpran\AppData\Local\Microsoft\WindowsApps;;C:\Users\mpran\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\JetBrains\PyCharm 2021.3\bin;;C:\Users\mpran\AppData\Roaming\TinyTeX\bin\win32;."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="25.311-b11"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_311\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
-    <property name="sun.stdout.encoding" value="cp437"/>
-    <property name="sun.desktop" value="windows"/>
-    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="java.class.version" value="52.0"/>
   </properties>
-  <testcase classname="artbughunt.AVLTree_ESTest" name="test05" time="0.014"/>
-  <testcase classname="artbughunt.AVLTree_ESTest" name="test27" time="0.002"/>
-  <testcase classname="artbughunt.AVLTree_ESTest" name="test04" time="0.007"/>
-  <testcase classname="artbughunt.AVLTree_ESTest" name="test26" time="0.001"/>
-  <testcase classname="artbughunt.AVLTree_ESTest" name="test03" time="0.002"/>
-  <testcase classname="artbughunt.AVLTree_ESTest" name="test25" time="0.002"/>
-  <testcase classname="artbughunt.AVLTree_ESTest" name="test02" time="0.002"/>
-  <testcase classname="artbughunt.AVLTree_ESTest" name="test24" time="0.002"/>
-  <testcase classname="artbughunt.AVLTree_ESTest" name="test01" time="0.001"/>
-  <testcase classname="artbughunt.AVLTree_ESTest" name="test23" time="0.002"/>
-  <testcase classname="artbughunt.AVLTree_ESTest" name="test00" time="0.011"/>
-  <testcase classname="artbughunt.AVLTree_ESTest" name="test22" time="0.002"/>
-  <testcase classname="artbughunt.AVLTree_ESTest" name="test21" time="0.001"/>
-  <testcase classname="artbughunt.AVLTree_ESTest" name="test20" time="0.001"/>
-  <testcase classname="artbughunt.AVLTree_ESTest" name="test09" time="0.001"/>
-  <testcase classname="artbughunt.AVLTree_ESTest" name="test08" time="0.005"/>
-  <testcase classname="artbughunt.AVLTree_ESTest" name="test07" time="0.002"/>
-  <testcase classname="artbughunt.AVLTree_ESTest" name="test29" time="0.001"/>
-  <testcase classname="artbughunt.AVLTree_ESTest" name="test06" time="0.001"/>
-  <testcase classname="artbughunt.AVLTree_ESTest" name="test28" time="0.003"/>
-  <testcase classname="artbughunt.AVLTree_ESTest" name="test30" time="0"/>
-  <testcase classname="artbughunt.AVLTree_ESTest" name="test16" time="0.006"/>
-  <testcase classname="artbughunt.AVLTree_ESTest" name="test15" time="0.001"/>
-  <testcase classname="artbughunt.AVLTree_ESTest" name="test14" time="0.001"/>
-  <testcase classname="artbughunt.AVLTree_ESTest" name="test13" time="0.001"/>
-  <testcase classname="artbughunt.AVLTree_ESTest" name="test12" time="0.001"/>
-  <testcase classname="artbughunt.AVLTree_ESTest" name="test11" time="0.001"/>
-  <testcase classname="artbughunt.AVLTree_ESTest" name="test33" time="0.001"/>
-  <testcase classname="artbughunt.AVLTree_ESTest" name="test10" time="0.001"/>
-  <testcase classname="artbughunt.AVLTree_ESTest" name="test32" time="0.001"/>
-  <testcase classname="artbughunt.AVLTree_ESTest" name="test31" time="0.001"/>
-  <testcase classname="artbughunt.AVLTree_ESTest" name="test19" time="0.001"/>
-  <testcase classname="artbughunt.AVLTree_ESTest" name="test18" time="0.001"/>
-  <testcase classname="artbughunt.AVLTree_ESTest" name="test17" time="0"/>
+  <testcase name="test05" classname="artbughunt.AVLTree_ESTest" time="0.017"/>
+  <testcase name="test04" classname="artbughunt.AVLTree_ESTest" time="0.002"/>
+  <testcase name="test03" classname="artbughunt.AVLTree_ESTest" time="0.002"/>
+  <testcase name="test02" classname="artbughunt.AVLTree_ESTest" time="0.005"/>
+  <testcase name="test24" classname="artbughunt.AVLTree_ESTest" time="0.003"/>
+  <testcase name="test01" classname="artbughunt.AVLTree_ESTest" time="0.001"/>
+  <testcase name="test23" classname="artbughunt.AVLTree_ESTest" time="0.002"/>
+  <testcase name="test00" classname="artbughunt.AVLTree_ESTest" time="0.002"/>
+  <testcase name="test22" classname="artbughunt.AVLTree_ESTest" time="0.002"/>
+  <testcase name="test21" classname="artbughunt.AVLTree_ESTest" time="0.007"/>
+  <testcase name="test20" classname="artbughunt.AVLTree_ESTest" time="0.021">
+    <error type="java.lang.StackOverflowError">java.lang.StackOverflowError
+</error>
+  </testcase>
+  <testcase name="test09" classname="artbughunt.AVLTree_ESTest" time="0.002"/>
+  <testcase name="test08" classname="artbughunt.AVLTree_ESTest" time="0.002"/>
+  <testcase name="test07" classname="artbughunt.AVLTree_ESTest" time="0.001"/>
+  <testcase name="test06" classname="artbughunt.AVLTree_ESTest" time="0.002"/>
+  <testcase name="test16" classname="artbughunt.AVLTree_ESTest" time="0.003"/>
+  <testcase name="test15" classname="artbughunt.AVLTree_ESTest" time="0.002"/>
+  <testcase name="test14" classname="artbughunt.AVLTree_ESTest" time="0.001"/>
+  <testcase name="test13" classname="artbughunt.AVLTree_ESTest" time="0.002"/>
+  <testcase name="test12" classname="artbughunt.AVLTree_ESTest" time="0.002"/>
+  <testcase name="test11" classname="artbughunt.AVLTree_ESTest" time="0.002"/>
+  <testcase name="test10" classname="artbughunt.AVLTree_ESTest" time="0.002"/>
+  <testcase name="test19" classname="artbughunt.AVLTree_ESTest" time="0.002"/>
+  <testcase name="test18" classname="artbughunt.AVLTree_ESTest" time="0.002"/>
+  <testcase name="test17" classname="artbughunt.AVLTree_ESTest" time="0.006"/>
 </testsuite>
