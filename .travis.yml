@@ -3,5 +3,6 @@ dist: trusty
 
 sudo: false
 script: "mvn cobertura:cobertura"
+        "mvn test"
 after_success:
   - bash <(curl -s https://codecov.io/bash)
