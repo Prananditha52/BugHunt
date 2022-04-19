@@ -1,7 +1,7 @@
 -------------------------------------------------------------------------------
 Test set: artbughunt.AVLTree_ESTest
 -------------------------------------------------------------------------------
-Tests run: 25, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 1.311 s <<< FAILURE! - in artbughunt.AVLTree_ESTest
-test20(artbughunt.AVLTree_ESTest)  Time elapsed: 0.021 s  <<< ERROR!
+Tests run: 20, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 1.303 s <<< FAILURE! - in artbughunt.AVLTree_ESTest
+test07(artbughunt.AVLTree_ESTest)  Time elapsed: 0.007 s  <<< ERROR!
 java.lang.StackOverflowError
 
